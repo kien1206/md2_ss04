@@ -1,16 +1,16 @@
 public class Test {
     public static void main(String[] args) {
-        // Khởi tạo đối tượng student thông qua class Student
+        // Khởi tạo đối tượng student thông qua lớp Student
         Student student = new Student();
-        student.getAge(20);
-        student.setStudentName();
-        // Gọi phương thức để nhập thông tin
-        student.inputData();
 
-        // Gọi phương thức để hiển thị thông tin
-        student.displayData();
+        // Gán giá trị cho các thuộc tính của đối tượng student
+        student.setStudentCode("SV003");
+        student.setStudentName("Nguyễn Văn C");
+        student.setAge(22);
+        student.setSex(true);
+        student.setAddress("Hồ Chí Minh");
 
-        // Phương thức displayData đã hiển thị kết quả học tập (xét tốt nghiệp)
-        // nên không cần gọi thêm phương thức khác.
+        // Gọi phương thức hiển thị thông tin
+        student.showIn4();
     }
 }
